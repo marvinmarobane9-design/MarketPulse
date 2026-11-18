@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+
+  font-family: 'Inter', sans-serif;
+
+  color: #f1f5f9;
+
+  background: #080d18;
+
+  font-synthesis: none;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  min-width: 320px;
+
+  background: #080d18;
+
+}
+
+.app {
+
+  min-height: 100vh;
+
+}
+
+.topbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 22px 6%;
+
+  border-bottom: 1px solid #263247;
+
+  background: #101827;
+
+}
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+.brand-icon {
+
+  display: grid;
+
+  place-items: center;
+
+  width: 43px;
+
+  height: 43px;
+
+  border-radius: 12px;
+
+  background: #2563eb;
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+}
+
+.brand h1 {
+
+  margin: 0;
+
+  font-size: 21px;
+
+}
+
+.brand p {
+
+  margin: 4px 0 0;
+
+  color: #8492a8;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+}
+
+.live-status {
+
+  color: #34d399;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+.dashboard {
+
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 40px 6%;
+
+}
+
+.welcome h2 {
+
+  margin: 10px 0;
+
+  font-size: 32px;
+
+}
+
+.welcome p {
+
+  color: #94a3b8;
+
+}
+
+.eyebrow {
+
+  color: #60a5fa !important;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+.stats {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin: 32px 0;
+
+}
+
+.stat-card,
+
+.panel {
+
+  padding: 24px;
+
+  border: 1px solid #263247;
+
+  border-radius: 14px;
+
+  background: #111c2d;
+
+}
+
+.stat-card span,
+
+.stat-card small {
+
+  display: block;
+
+  color: #94a3b8;
+
+}
+
+.stat-card strong {
+
+  display: block;
+
+  margin: 15px 0;
+
+  color: #60a5fa;
+
+  font-size: 32px;
+
+}
+
+.stat-card small {
+
+  font-size: 12px;
+
+}
+
+.panel {
+
+  margin-bottom: 22px;
+
+}
+
+.section-heading {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+.section-heading h3,
+
+.panel h3 {
+
+  margin: 0 0 8px;
+
+}
+
+.section-heading p {
+
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+}
+
+.tag {
+
+  padding: 7px 10px;
+
+  border-radius: 6px;
+
+  background: #1e3a5f;
+
+  color: #93c5fd;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+}
+
+.market-row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 19px 0;
+
+  border-bottom: 1px solid #263247;
+
+}
+
+.market-row:last-child {
+
+  border-bottom: none;
+
+}
+
+.market-row strong,
+
+.market-row small {
+
+  display: block;
+
+}
+
+.market-row small {
+
+  margin-top: 6px;
+
+  color: #94a3b8;
+
+}
+
+.monitoring {
+
+  color: #34d399;
+
+  font-size: 12px;
+
+}
+
+.empty-state {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 35px 15px;
+
+}
+
+.empty-state > span {
+
+  color: #60a5fa;
+
+  font-size: 30px;
+
+}
+
+.empty-state strong {
+
+  margin-top: 15px;
+
+}
+
+.empty-state p {
+
+  max-width: 420px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+}
+
+footer {
+
+  padding: 30px 0;
+
+  color: #8492a8;
+
+  text-align: center;
+
+  font-size: 12px;
+
+}
+
+@media (max-width: 650px) {
+
+  .stats {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .dashboard {
+
+    padding: 28px 5%;
+
+  }
+
+  .welcome h2 {
+
+    font-size: 26px;
+
+  }
+
+  .topbar {
+
+    padding: 18px 5%;
+
+  }
+
+}
